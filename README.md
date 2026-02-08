@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License"/>
 </p>
 
-<h1 align="center">🧠 Multimodal Depression Detection System</h1>
+<h1 align="center">Multimodal Depression Detection System</h1>
 
 <p align="center">
   <b>A machine learning pipeline combining Facial Expression Analysis and EEG Signal Processing for comprehensive depression screening</b>
@@ -19,37 +19,37 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Overview](#-overview)
-- [Architecture](#-architecture)
-- [Modality 1: Facial Expression Analysis](#-modality-1-facial-expression-analysis)
-- [Modality 2: EEG-Based Detection](#-modality-2-eeg-based-detection)
-- [Multimodal Fusion](#-multimodal-fusion)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Results](#-results)
-- [Project Structure](#-project-structure)
-- [Future Work](#-future-work)
-- [References](#-references)
-- [License](#-license)
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Modality 1: Facial Expression Analysis](#modality-1-facial-expression-analysis)
+- [Modality 2: EEG-Based Detection](#modality-2-eeg-based-detection)
+- [Multimodal Fusion](#multimodal-fusion)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Project Structure](#project-structure)
+- [Future Work](#future-work)
+- [References](#references)
+- [License](#license)
 
 ---
 
-## 🎯 Overview
+## Overview
 
 Depression is a critical mental health condition affecting millions worldwide. Early detection is crucial for timely intervention. This project implements a **multimodal approach** that combines:
 
 | Modality | Data Source | Analysis Type |
 |----------|-------------|---------------|
-| 🎭 **Facial Expression** | Video Frames | Visual Emotion Recognition |
-| 🧠 **EEG Signals** | Brain Activity | Neurophysiological Patterns |
+| **Facial Expression** | Video Frames | Visual Emotion Recognition |
+| **EEG Signals** | Brain Activity | Neurophysiological Patterns |
 
 By fusing insights from both **behavioral** (facial expressions) and **physiological** (brain signals) indicators, the system provides a more robust and comprehensive depression screening mechanism.
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -108,7 +108,7 @@ By fusing insights from both **behavioral** (facial expressions) and **physiolog
 
 ---
 
-## 🎭 Modality 1: Facial Expression Analysis
+## Modality 1: Facial Expression Analysis
 
 ### Phase A: Training Pipeline
 
@@ -155,12 +155,12 @@ $$\text{Depression Ratio} = \frac{\text{Sad} + \text{Neutral} + \text{Fear}}{\te
 
 | Ratio | Classification |
 |-------|----------------|
-| > 2.0 | 🔴 High Depressive Indicators |
-| ≤ 2.0 | 🟢 Normal/Balanced Affect |
+| > 2.0 | High Depressive Indicators |
+| ≤ 2.0 | Normal/Balanced Affect |
 
 ---
 
-## 🧠 Modality 2: EEG-Based Detection
+## Modality 2: EEG-Based Detection
 
 ### Dataset: DEAP
 
@@ -178,8 +178,8 @@ Since clinical labels are unavailable, we use **valence-based proxy labeling**:
 
 | Valence | Label | Class |
 |---------|-------|-------|
-| ≤ 4 | 1 | 😔 Depressed |
-| > 4 | 0 | 😊 Non-Depressed |
+| ≤ 4 | 1 | Depressed |
+| > 4 | 0 | Non-Depressed |
 
 ### Signal Processing Pipeline
 
@@ -225,7 +225,7 @@ LogisticRegression(
 
 ---
 
-## 🔗 Multimodal Fusion
+## Multimodal Fusion
 
 The system combines predictions from both modalities to provide a robust final assessment:
 
@@ -248,14 +248,14 @@ The system combines predictions from both modalities to provide a robust final a
 
 | Video Result | EEG Result | Final Output |
 |--------------|------------|--------------|
-| High | Depressed | 🔴 **Confirmed High Risk** |
-| High | Non-Depressed | 🟡 **Moderate Risk** |
-| Normal | Depressed | 🟡 **Moderate Risk** |
-| Normal | Non-Depressed | 🟢 **Low Risk** |
+| High | Depressed | **Confirmed High Risk** |
+| High | Non-Depressed | **Moderate Risk** |
+| Normal | Depressed | **Moderate Risk** |
+| Normal | Non-Depressed | **Low Risk** |
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 
@@ -312,7 +312,7 @@ unzip deap-dataset.zip -d data/eeg
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### Training the Models
 
@@ -348,28 +348,28 @@ python multimodal_analysis.py \
               MULTIMODAL DEPRESSION ANALYSIS REPORT
 ═══════════════════════════════════════════════════════════════
 
-📹 VIDEO ANALYSIS
+VIDEO ANALYSIS
 ───────────────────────────────────────────────────────────────
   Frames Analyzed: 1,245
   Emotion Distribution:
-    • Happy:   156 (12.5%)
-    • Sad:     423 (34.0%)
-    • Neutral: 389 (31.2%)
-    • Fear:    187 (15.0%)
-    • Angry:    45 (3.6%)
-    • Disgust:  28 (2.2%)
-    • Surprise: 17 (1.4%)
+    - Happy:   156 (12.5%)
+    - Sad:     423 (34.0%)
+    - Neutral: 389 (31.2%)
+    - Fear:    187 (15.0%)
+    - Angry:    45 (3.6%)
+    - Disgust:  28 (2.2%)
+    - Surprise: 17 (1.4%)
   
   Depression Ratio: 6.36
-  Status: 🔴 HIGH DEPRESSIVE INDICATORS
+  Status: HIGH DEPRESSIVE INDICATORS
 
-🧠 EEG ANALYSIS
+EEG ANALYSIS
 ───────────────────────────────────────────────────────────────
   Trials Analyzed: 40
   Classification: DEPRESSED
   Confidence: 78.3%
 
-🔗 MULTIMODAL FUSION
+MULTIMODAL FUSION
 ───────────────────────────────────────────────────────────────
   Combined Assessment: CONFIRMED HIGH RISK
   Recommendation: Professional consultation advised
@@ -379,7 +379,7 @@ python multimodal_analysis.py \
 
 ---
 
-## 📊 Results
+## Results
 
 ### Facial Expression Recognition
 
@@ -414,57 +414,57 @@ python multimodal_analysis.py \
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 multimodal-depression-detection/
-│
-├── 📂 data/
-│   ├── 📂 facial/                    # Facial expression images
-│   │   ├── 📂 Angry/
-│   │   ├── 📂 Disgust/
-│   │   ├── 📂 Fear/
-│   │   ├── 📂 Happy/
-│   │   ├── 📂 Neutral/
-│   │   ├── 📂 Sad/
-│   │   └── 📂 Surprise/
-│   ├── 📂 eeg/                       # EEG signal data
-│   │   └── 📂 data_preprocessed_python/
-│   └── 📂 videos/                    # Test video files
-│
-├── 📂 models/
-│   ├── 📄 facial_model.pkl           # Trained facial model
-│   ├── 📄 facial_scaler.pkl          # Facial feature scaler
-│   ├── 📄 eeg_model.pkl              # Trained EEG model
-│   └── 📄 eeg_scaler.pkl             # EEG feature scaler
-│
-├── 📂 src/
-│   ├── 📄 facial_preprocessing.py    # Image preprocessing utilities
-│   ├── 📄 eeg_preprocessing.py       # EEG signal processing
-│   ├── 📄 feature_extraction.py      # Feature extraction functions
-│   ├── 📄 train_facial_model.py      # Facial model training script
-│   ├── 📄 train_eeg_model.py         # EEG model training script
-│   ├── 📄 analyze_video.py           # Video analysis script
-│   ├── 📄 analyze_eeg.py             # EEG analysis script
-│   └── 📄 multimodal_analysis.py     # Combined analysis script
-│
-├── 📂 notebooks/
-│   ├── 📓 01_facial_eda.ipynb        # Facial data exploration
-│   ├── 📓 02_eeg_eda.ipynb           # EEG data exploration
-│   └── 📓 03_multimodal_demo.ipynb   # Full pipeline demonstration
-│
-├── 📂 docs/
-│   ├── 📄 confusion_matrix.png       # Results visualization
-│   └── 📄 architecture.png           # System architecture diagram
-│
-├── 📄 requirements.txt               # Python dependencies
-├── 📄 README.md                      # This file
-└── 📄 LICENSE                        # MIT License
+|
++-- data/
+|   +-- facial/                    # Facial expression images
+|   |   +-- Angry/
+|   |   +-- Disgust/
+|   |   +-- Fear/
+|   |   +-- Happy/
+|   |   +-- Neutral/
+|   |   +-- Sad/
+|   |   +-- Surprise/
+|   +-- eeg/                       # EEG signal data
+|   |   +-- data_preprocessed_python/
+|   +-- videos/                    # Test video files
+|
++-- models/
+|   +-- facial_model.pkl           # Trained facial model
+|   +-- facial_scaler.pkl          # Facial feature scaler
+|   +-- eeg_model.pkl              # Trained EEG model
+|   +-- eeg_scaler.pkl             # EEG feature scaler
+|
++-- src/
+|   +-- facial_preprocessing.py    # Image preprocessing utilities
+|   +-- eeg_preprocessing.py       # EEG signal processing
+|   +-- feature_extraction.py      # Feature extraction functions
+|   +-- train_facial_model.py      # Facial model training script
+|   +-- train_eeg_model.py         # EEG model training script
+|   +-- analyze_video.py           # Video analysis script
+|   +-- analyze_eeg.py             # EEG analysis script
+|   +-- multimodal_analysis.py     # Combined analysis script
+|
++-- notebooks/
+|   +-- 01_facial_eda.ipynb        # Facial data exploration
+|   +-- 02_eeg_eda.ipynb           # EEG data exploration
+|   +-- 03_multimodal_demo.ipynb   # Full pipeline demonstration
+|
++-- docs/
+|   +-- confusion_matrix.png       # Results visualization
+|   +-- architecture.png           # System architecture diagram
+|
++-- requirements.txt               # Python dependencies
++-- README.md                      # This file
++-- LICENSE                        # MIT License
 ```
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 - [ ] **Deep Learning Integration:** Replace Logistic Regression with CNNs for facial analysis and LSTMs/Transformers for EEG
 - [ ] **Real-time Processing:** Implement live video and EEG stream analysis
@@ -475,7 +475,7 @@ multimodal-depression-detection/
 
 ---
 
-## 📚 References
+## References
 
 1. **DEAP Dataset:** Koelstra, S., et al. (2012). DEAP: A Database for Emotion Analysis Using Physiological Signals. IEEE Transactions on Affective Computing.
 
@@ -487,53 +487,6 @@ multimodal-depression-detection/
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 👥 Authors
-
-- **Joseph Jisso** - *Initial work* - [GitHub Profile](https://github.com/JosephJisso)
-
----
-
-## ⭐ Acknowledgments
-
-- Kaggle community for datasets
-- scikit-learn developers
-- OpenCV community
-- All researchers in affective computing and mental health AI
-
----
-
-<p align="center">
-  <b>⚠️ Disclaimer</b>
-</p>
-
-<p align="center">
-  <i>This system is designed for research and educational purposes only. It is NOT a substitute for professional medical diagnosis. Always consult qualified healthcare professionals for mental health concerns.</i>
-</p>
-
----
-
-<p align="center">
-  Made with ❤️ for Mental Health Awareness
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Mental%20Health-Matters-green?style=for-the-badge" alt="Mental Health Matters"/>
-</p>
