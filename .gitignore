@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Data files (too large for git)
+data/
+*.zip
+*.dat
+*.pkl
+!models/*.pkl
+
+# Kaggle credentials
+kaggle.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Model outputs (optional - uncomment if models are large)
+# models/
+
+# Temporary files
+*.tmp
+*.temp
