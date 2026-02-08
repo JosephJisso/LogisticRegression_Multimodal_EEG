@@ -56,7 +56,7 @@ By fusing insights from **behavioral** (facial expressions), **physiological** (
 ## Architecture
 
 <p align="center">
-  <img src="docs/diagram.png" alt="System Architecture" width="800"/>
+  <img src="docs/new.png" alt="System Architecture" width="800"/>
 </p>
 
 ---
