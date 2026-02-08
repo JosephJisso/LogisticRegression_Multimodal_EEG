@@ -1,23 +1,12 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/scikit--learn-1.0+-orange?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn"/>
-  <img src="https://img.shields.io/badge/OpenCV-4.0+-green?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV"/>
-  <img src="https://img.shields.io/badge/librosa-0.9+-red?style=for-the-badge&logo=python&logoColor=white" alt="Librosa"/>
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License"/>
-</p>
+# Multimodal Depression Detection System
 
-<h1 align="center">Multimodal Depression Detection System</h1>
+A machine learning pipeline combining Facial Expression Analysis, EEG Signal Processing, and Audio Feature Extraction for comprehensive depression screening.
 
-<p align="center">
-  <b>A machine learning pipeline combining Facial Expression Analysis, EEG Signal Processing, and Audio Feature Extraction for comprehensive depression screening</b>
-</p>
+**Technologies:** Python 3.8+ | scikit-learn | OpenCV | librosa | scipy
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Modality%201-Facial%20Video%20Analysis-blueviolet?style=flat-square" alt="Facial"/>
-  <img src="https://img.shields.io/badge/Modality%202-EEG%20Signal%20Processing-teal?style=flat-square" alt="EEG"/>
-  <img src="https://img.shields.io/badge/Modality%203-Audio%20Analysis-crimson?style=flat-square" alt="Audio"/>
-  <img src="https://img.shields.io/badge/Algorithm-Logistic%20Regression-red?style=flat-square" alt="Algorithm"/>
-</p>
+**Modalities:** Facial Video Analysis | EEG Signal Processing | Audio Analysis
+
+**Algorithm:** Logistic Regression
 
 ---
 
